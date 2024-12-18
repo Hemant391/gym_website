@@ -9,7 +9,6 @@ import Testimonials from "../Components/Testimonials";
 function Home() {
   return (
     <>
-      {/* Hero Section with Background Image */}
       <div
         className="relative h-screen flex flex-col justify-center items-center text-center text-white"
         style={{

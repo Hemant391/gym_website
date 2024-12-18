@@ -35,9 +35,8 @@ const BlogSection = () => {
       </h2>
 
       {/* Blog Layout */}
-      <div className="flex flex-col md:flex-row justify-center gap-8 px-10">
-        {/* Left Side: Large Image */}
-        <div className="relative md:w-2/3 w-full">
+      <div className="flex flex-col md:flex-row justify-center gap-8 px-10 ">
+        <div className="relative md:w-2/3 w-full hover:brightness-90 cursor-pointer">
           <img
             src={blogs[0].image}
             alt={blogs[0].title}
@@ -57,7 +56,7 @@ const BlogSection = () => {
         {/* Right Side: Two Smaller Images */}
         <div className="flex flex-col justify-between gap-4 md:w-1/3 w-full">
           {blogs.slice(1).map((blog) => (
-            <div key={blog.id} className="relative w-full">
+            <div key={blog.id} className="relative w-full hover:brightness-90 cursor-pointer">
               <img
                 src={blog.image}
                 alt={blog.title}
